@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 100" width="880" height="100">
+  <defs>
+    <style>
+      .mono {
+        font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+      }
+      .prompt {
+        fill: #10B981;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .text-line {
+        fill: #F1F5F9;
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+      }
+      .cursor {
+        fill: #38BDF8;
+        animation: blink 0.9s infinite ease-in-out;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Typing Container -->
+  <rect x="2" y="2" width="876" height="96" rx="10" fill="#0A0F1D" stroke="#1E293B" stroke-width="1.2"/>
+  
+  <!-- Prompt line -->
+  <g class="mono">
+    <text x="24" y="34" class="prompt">aditya@terminal:~$</text>
+    <text x="200" y="34" font-size="16" fill="#94A3B8">cat greeting.txt</text>
+    
+    <!-- Output typing -->
+    <text x="24" y="70" class="text-line">Aditya Chauhan <tspan fill="#38BDF8">&#183;</tspan> <tspan fill="#94A3B8">Full-Stack Dev &amp; Security Explorer</tspan></text>
+    <rect x="660" y="51" width="12" height="22" rx="2" class="cursor"/>
+  </g>
+</svg>
